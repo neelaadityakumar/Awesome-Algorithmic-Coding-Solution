@@ -1,3 +1,4 @@
+# https://usaco.org/index.php?page=viewproblem2&cpid=615
 from collections import defaultdict
 import sys
 sys.setrecursionlimit(10**9)

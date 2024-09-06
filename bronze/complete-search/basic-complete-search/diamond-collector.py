@@ -1,3 +1,4 @@
+# https://usaco.org/index.php?page=viewproblem2&cpid=639
 import sys
 sys.setrecursionlimit(10**9)
 
