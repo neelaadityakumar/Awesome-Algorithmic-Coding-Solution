@@ -77,6 +77,5 @@ for i in range(1, N + 1):
     if possible_i[i]:
         num_patient_zero += 1
 
-# Write the output data
 print(f"{num_patient_zero} {lower_K} {'Infinity' if upper_K == 251 else upper_K}")
 
