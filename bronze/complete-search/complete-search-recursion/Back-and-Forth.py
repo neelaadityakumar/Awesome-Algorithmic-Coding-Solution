@@ -22,12 +22,11 @@ def solve(day,carry,first,second):
     if day==4:
         ans.add(carry)
         return
-    n=len(first if day%2==1 else second)
-    n = len(first if day % 2 == 0 else second)  # Corrected day check
+    n = len(first if day % 2 == 0 else second)
     for i in range(n):
-        if day % 2 == 0:  # Corrected day check for the first to second transfer
+        if day % 2 == 0:
             solve(day + 1, carry - first[i], first[:i] + first[i+1:], second + [first[i]])
-        else:  # Corrected day check for the second to first transfer
+        else:
             solve(day + 1, carry + second[i], first + [second[i]], second[:i] + second[i+1:])
 
 
