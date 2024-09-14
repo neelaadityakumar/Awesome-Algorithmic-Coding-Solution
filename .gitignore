@@ -1,0 +1,6 @@
+_test
+_test/
+_test/test.in
+_test/test.out
+rename.py
+.vscode
