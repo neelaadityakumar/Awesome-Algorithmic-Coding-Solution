@@ -1,9 +1,8 @@
-from collections import deque
-from collections import defaultdict
+
 import sys
 sys.setrecursionlimit(10**9)
-external = 0
-useLocal = 0
+external = 1
+useLocal = 1
 if external == 1:
     if useLocal == 1:
         sys.stdin = open("/Users/aditya.kumar/Desktop/code/_test/test.in", "r")
