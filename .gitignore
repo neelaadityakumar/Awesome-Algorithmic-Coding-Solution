@@ -4,3 +4,4 @@ _test/test.in
 _test/test.out
 rename.py
 .vscode
+.DS_Store
