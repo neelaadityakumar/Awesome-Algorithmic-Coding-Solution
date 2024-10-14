@@ -2,7 +2,7 @@ from sortedcontainers import SortedList
 
 
 class Solution:
-    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+    def maxSlidingWindow(self, nums, k):
         s = SortedList(nums[:k])
         ret = []
 
