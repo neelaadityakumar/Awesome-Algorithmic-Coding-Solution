@@ -1,0 +1,20 @@
+{
+  "name": "awesome-algorithmic-coding-solution",
+  "version": "1.0.0",
+  "description": "## 0/1 Knapsack",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neelaadityakumar/Awesome-Algorithmic-Coding-Solution.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neelaadityakumar/Awesome-Algorithmic-Coding-Solution/issues"
+  },
+  "homepage": "https://github.com/neelaadityakumar/Awesome-Algorithmic-Coding-Solution#readme"
+}
