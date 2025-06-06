@@ -4,5 +4,5 @@
     "iostream": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
-  "cSpell.words": ["heapify", "Warshall"]
+  "cSpell.words": ["heapify", "Karp", "Warshall"]
 }
