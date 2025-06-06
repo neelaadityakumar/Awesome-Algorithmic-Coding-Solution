@@ -28,6 +28,17 @@ class PriorityQueue {
     return removed;
   }
 
+  //Extra methods for convenience
+  isEmpty() {
+    return this.size() === 0;
+  }
+  enqueue(element) {
+    this.add(element);
+  }
+  dequeue() {
+    return this.poll();
+  }
+
   // === Internal Methods (Private by Convention) ===
 
   _heapifyUp(index) {
