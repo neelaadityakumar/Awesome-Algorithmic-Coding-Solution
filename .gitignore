@@ -3,3 +3,4 @@ _test/
 _test/test.in
 _test/test.out
 .DS_Store
+usaco/gold/dp/input.txt
