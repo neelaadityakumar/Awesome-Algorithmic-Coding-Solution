@@ -6,8 +6,6 @@ const input = require("fs")
 const n = +input[0];
 const height = input[1].split(" ").map(Number);
 const a = input[2].split(" ").map(Number);
-const MOD = 1e9 + 7;
-
 const dp = new Map();
 
 function solve(i, prev) {
