@@ -1,8 +1,4 @@
-/*
-Problem Name: Counting Towers
-Problem Link: https://cses.fi/problemset/task/2413
-Author: Sachin Srivastava (mrsac7)
-*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
