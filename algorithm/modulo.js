@@ -27,3 +27,7 @@ function modPow2(base, power, mod) {
 function modInverse(base, mod) {
   return modPow(base, mod - 2, mod);
 }
+
+function modSub(a, b, mod) {
+  return ((a % mod) - (b % mod) + mod) % mod;
+}
