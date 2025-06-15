@@ -1,35 +1,38 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define int long long
 
-const int MOD = 1e9 + 7;
+#define ll long long
 
-// Fast modular exponentiation
-int modPow(int base, int exp, int mod) {
-    if (base == 0 && exp == 0) return 1; // 0^0 = 1 as per problem statement
-
-    int result = 1;
-    base %= mod;
-
-    while (exp > 0) {
-        if (exp & 1) result = (result * base) % mod;
-        base = (base * base) % mod;
-        exp >>= 1;
+void numberSpiral(ll y, ll x) {
+    ll ans = 0;
+    if (y > x) {
+        ans = (y - 1) * (y - 1);
+        if (y % 2 == 1) {
+            ans += x;
+        } else {
+            ans += 2 * y - x;
+        }
+    } else {
+        ans = (x - 1) * (x - 1);
+        if (x % 2 == 0) {
+            ans += y;
+        } else {
+            ans += 2 * x - y;
+        }
     }
-
-    return result;
+    cout << ans << '\n';
 }
 
-int32_t main() {
+int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
 
     int t;
     cin >> t;
     while (t--) {
-        int a, b, c;
-        cin >> a >> b >>c;
-        cout << modPow(a, modPow(b, c, MOD-1),MOD) << "\n";
+        ll y, x;
+        cin >> y >> x;
+        numberSpiral(y, x);
     }
 
     return 0;
