@@ -46,7 +46,7 @@ class PriorityQueue {
       return;
     }
     const parentIdx = this._parent(index);
-    if (this.compare(this.heap[parentIdx], this.heap[index])) {
+    if (this.compare(this.heap[index], this.heap[parentIdx]) < 0) {
       this._swap(parentIdx, index);
       this._heapifyUp(parentIdx);
     }
@@ -65,16 +65,17 @@ class PriorityQueue {
     let right = this._rightChild(index);
     if (
       left < this.heap.length &&
-      this.compare(this.heap[index], this.heap[left])
+      this.compare(this.heap[left], this.heap[index]) < 0
     ) {
       index = left;
     }
     if (
       right < this.heap.length &&
-      this.compare(this.heap[index], this.heap[right])
+      this.compare(this.heap[right], this.heap[index]) < 0
     ) {
       index = right;
     }
+
     return index;
   }
 
@@ -105,4 +106,9 @@ class MaxPriorityQueue extends PriorityQueue {
     super((a, b) => b - a);
   }
 }
-export { MinPriorityQueue, MaxPriorityQueue, PriorityQueue };
+
+module.exports = {
+  MaxPriorityQueue,
+  MinPriorityQueue,
+  PriorityQueue,
+};

@@ -1,4 +1,4 @@
-import { PriorityQueue } from "../heap.js";
+import { PriorityQueue } from "../heap.cjs";
 
 function dijkstra(graph, start) {
   const distances = {};
